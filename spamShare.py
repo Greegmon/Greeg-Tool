@@ -4,6 +4,8 @@ import re
 from rich.console import Console
 from maxgradient import Gradient
 import sys
+import os
+os.system('clear')
 console = Console()
 config = {
 	'cookies': '',
@@ -37,7 +39,6 @@ if not config['post'].startswith('https://'):
 elif not share_count:
 	console.print(Gradient("Bobo walang count",colors=['red','orange','red']));sys.exit()
 
-import os
 os.system("clear")
 banner()
 headers = {
